@@ -1,0 +1,33 @@
+<html>
+<head>
+<script type="text/javascript" src="data.json"></script>
+<style type="text/css">
+	th {
+		background-color: #AAAAFF;
+	}
+</style>
+</head>
+
+<body>
+<div id="demo"></div>
+
+<script type="text/javascript">
+	const obj = JSON.parse(text);
+	var N = obj.employees.length;
+	var TH = "";
+	var TBODY = "";
+	
+	for(var cols in obj.employees[0]) {
+		TH += "<th>" + cols + "</th>";
+	}
+
+	for(var i=0; i<N; i++) {
+		TBODY += "<tr><td>" + obj.employees[i].firstName + "</td>"
+			+ "<td>" +obj.employees[i].lastName + "</td></tr>";
+	}
+
+	var TABLE = "<table border='1' width='300'>" + TH + TBODY + "</table>";
+	document.getElementById("demo").innerHTML = TABLE;
+</script>
+</body>
+</html>

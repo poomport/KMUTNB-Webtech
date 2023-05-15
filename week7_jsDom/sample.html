@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <title>JS Dom</title>
+    <meta charset= "UTF-8" />
+  </head>
+
+<body>
+
+<h1  id="header">The Javascript DOM</h1>
+<p>DOM is "Document Object Model".</p>
+<img id="pict" src="./image/Aerial.jpg" alt="a picture"  width="500"/>
+<ul  id="list">
+	<li><a href="www.sun.com">Sun</a></li>
+	<li><a href="www.cnn.com">CNN</a></li>
+	<li><a href="www.nbc.com">NBC</a></li>
+</ul> 
+<a href="http://www.kmutnb.ac.th" id="link">KMUTNB</a> 
+  <button onClick="document.getElementById('pict').src='./image/AerialRe.png'; document.getElementById('link').href = 'http://ced.kmutnb.ac.th'">Click me!!</button>
+<script>
+  var x = document.getElementById('header');
+  x.style.backgroundColor = "rgb(255,255,0)";
+  x.style.color="#00F"
+  x.style.textAlign ="center";
+
+  //var pict = document.getElementById('pict');
+  //pict.src ="./image/AerialRe.png";
+  /*
+  var x = document.getElementById('header').innerHTML;
+  var str = x.innerHTML;
+  */
+</script>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+body{
+    background-image:url('itmybackground.gif');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+
+  }
+  #header{
+    text-align:center;  
+    background-color: bisque;
+    font-size: 50px;
+     
+  }
+  .chletter{
+    text-align:center; 
+    font-size: 50px;
+  }
+  a:link { color:yellow;}
+        a:visited { color:red}
+        a:active {color: blue;}
+        a:hover {font-style: italic;}
+        p:hover {color:green;}

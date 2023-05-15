@@ -1,0 +1,22 @@
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  body{
+    background-color: rgb(255, 238, 192);
+  }
+  .lf{
+    display: flex;
+    justify-content: space-between;
+  }
+  .boxcard{
+    width: 100%;
+    height:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-direction: column;
+    border: 1px solid rgba(128, 128, 128, 0.297);
+}

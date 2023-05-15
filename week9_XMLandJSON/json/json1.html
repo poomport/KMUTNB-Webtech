@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Render JSON to a Table</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <script>
+        //Array of JSON Objects
+        const stdPhones = [
+            {name: "Alice", section: 'TCT', tel: '085-305-2824'},
+            {name: "Bob", section: 'CED', tel: '088-234-6432'},
+            {name: "Alan", section: 'CED', tel: '02-534-2636'},
+            {name: "Jack", section: 'TCT', tel: '089-341-7653'},
+            {name: "Steve", section: 'TCT', tel: '081-733-0865'},
+            {name: "Susan", section: 'CED', tel: '088-865-4894'},
+            {name: "Thomas", section: 'TCT', tel: '089-375-7944'},
+            {name: "Nathan", section: 'CED', tel: '081-752-5894'},
+            {name: "Steve", section: 'CED', tel: '911'}
+            ];
+
+    </script>
+  </head>
+  <body>
+    <div class="container mt-5 w-50">
+      <h1 class="text-center bg-info text-white">Student Phone</h1>
+      <table class="table table-sm table-bordered table-striped table-hover">
+        <thead>
+          <tr class="text-center"><th>Name</th><th>Section</th><th>Tel.</th></tr>
+        </thead>
+        <tbody>
+          <script>
+            stdPhones.forEach(function(phone) {
+            //stdPhones.forEach(phone => {
+              document.write('<tr>');
+              document.write(`<td>${phone.name}</td>`);
+              document.write(`<td>${phone.section}</td>`);
+              document.write(`<td>${phone.tel}</td>`);
+              document.write('</tr>');
+            });
+          </script>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

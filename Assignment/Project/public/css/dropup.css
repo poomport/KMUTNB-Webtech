@@ -1,0 +1,36 @@
+.drop-wrapper{
+    position: relative;
+}
+
+.drop-menu{
+    display: none;
+    position: absolute;
+    width: 150px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 3px 0 #ccc;
+}
+
+.drop-menu.active{
+    display: block;
+}
+
+.dropup{
+    bottom: 100%;
+    margin-bottom: 0.125rem;
+}
+
+
+.drop-menu a{
+    display: block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: #343434;
+    background-color: #ffffff;
+}
+.drop-menu a:hover{
+    display: block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: #343434;
+    background-color: #ffa38a;
+}

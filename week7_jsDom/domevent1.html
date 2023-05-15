@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>MouseEvent</title>
+</head>
+<body onload="window.alert('Welcome to ced!!');"
+     onResize="window.alert('Please...');">
+    <h1>Hello CED!!!</h1>
+    <div id="display">Mouse Event</div>
+    <button onMouseover="document.getElementById('display').innerHTML ='Click Me please!!!'"
+            onMouseout="document.getElementById('display').innerHTML = '-';">Click Me!!</button>
+            <script>
+                function calculate(){
+                    var x = document.getElementById('display');
+                    x.innerHTML = "Hello CED!!!";
+                    var a = 10;
+                    var b = 20;
+                    window.alert(a+b);
+                }
+            </script>
+</body>
+</html>

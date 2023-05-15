@@ -1,0 +1,26 @@
+h2{
+    background-color: red;
+    color: yellow;
+    text-align: center;
+}
+h3{
+    background-color: green ;
+    color: #BDB76B;
+    text-align: center;
+}
+h4{
+    background-color: grey ;
+    color: lavender;
+    text-align: center;
+}
+h5{
+    background-color:purple ;
+    color: yellow;
+    text-align: center;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }

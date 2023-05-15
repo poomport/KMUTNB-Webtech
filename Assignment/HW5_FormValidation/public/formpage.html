@@ -1,0 +1,272 @@
+<!--
+    Name: Ratchapoom Huabiam
+    ID: 6402041620256
+-->  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Sign-up</title>
+    <link rel="stylesheet" href="./css/styleAnibutton.css">
+    <link rel="stylesheet" href="./css/styleAll.css">
+
+    <script>
+      
+      function check(){
+       
+              if(document.getElementById('txtUser').value==""){
+                  window.alert("Please Enter Username!!!");
+                  document.frmLogin.txtUser.focus();
+                  return false;
+              }
+              if(document.frmLogin.txtEmail.value==""){
+                  window.alert("Please Enter Email!!!");
+                  document.frmLogin.txtEmail.focus();
+                  return false;
+              }
+              if(document.frmLogin.txtPass.value==""){
+                  window.alert("Please Enter Password!!!");
+                  document.frmLogin.txtPass.focus();
+                  //document.getElementByID('txtPass').focus();
+                  return false;
+              }
+              if(document.frmLogin.txtCPass.value==""){
+                  window.alert("Please Enter Confirm Password!!!");
+                  document.frmLogin.txtCPass.focus();
+                  return false;
+              }
+              if(document.frmLogin.txtID.value==""){
+                  window.alert("Please Enter Identification card!!!");
+                  document.frmLogin.txtID.focus();
+                  return false;
+              }
+              if(document.frmLogin.txtCS.value==""){
+                  window.alert("Please Enter Currently studying!!!");
+                  document.frmLogin.txtCS.focus();
+                  return false;
+              }
+              if(document.frmLogin.txtA.value==""){
+                  window.alert("Please Enter Address!!!");
+                  document.frmLogin.txtA.focus();
+                  return false;
+              }
+              if(document.frmLogin.txtp.value==""){
+                  window.alert("Please Enter phone number!!!");
+                  document.frmLogin.txtp.focus();
+                  return false;
+              }
+              
+              var GEND = document.frmLogin.rdGender;
+	            if(! (GEND[0].checked||GEND[1].checked||GEND[2].checked) ) {
+		              window.alert("Please select Gender");
+		              return false;
+	            }
+             var Ayear = document.frmLogin.rdy;
+	            if(! (Ayear[0].checked||Ayear[1].checked||Ayear[2].checked||Ayear[3].checked) ) {
+		              alert("Please select Academic year!!");
+		              return false;
+	            }
+              var Year = document.getElementById('Year');
+                if(Year.value==""){
+                window.alert("Please select Birthday --Year--!!!");
+                Year.focus();
+                return false;
+              }
+              var Month = document.getElementById('Month');
+                if(Month.value==""){
+                window.alert("Please select Birthday --Month--!!!");
+                Month.focus();
+                return false;
+              }
+              var Day = document.getElementById('Day');
+                if(Day.value==""){
+                window.alert("Please select Birthday --Day--!!!");
+                Day.focus();
+                return false;
+              }
+              var checkboxes = document.querySelectorAll('Input[name="chkAp[]"]:checked');
+		
+			         if (checkboxes.length < 1) {
+			         window.alert("Please select Aptitude:!!!");
+			         return false;
+		           }        
+			        
+              var Argreement = document.frmLogin.rdArg;
+	            if(! (Argreement.checked) ) {
+		              window.alert("Please select accept our terms and conditions !!!");
+                  Argreement.focus();
+		              return false;
+	            }
+              
+                return true; 
+              } 
+              
+     </script>     
+     <style type="text/css">
+      body{
+        background-image: url(./image/Background.gif);
+        background-repeat: no-repeat ;
+        background-attachment: fixed;
+        background-size: 100% 100%;    
+      }
+    </style>
+      
+      
+</head>
+<body >
+    
+    <div class="col-md-4">
+        <div class="card">
+          <div class="card-body"><br/>
+            <img src="./image/Signup.png" class="img-fluid " width="500" > 
+              <form name="frmLogin" method="post"  action="." onSubmit="return check();"><br/><br/>
+              <p class="card-text">USERNAME</p> 
+              <input  type="text" id="txtUser" name="txtUser" class="txt_input" placeholder=" Enter Your Name"/> <br />
+              <p class="card-text">EMAIL</p> 
+              <input  type="text" id="txtEmail" name="txtEmail" class="txt_input" placeholder=" Enter Your Email"/> <br />
+              <p class="card-text">PASSWORD</p> 
+              <input  type="password" id="txtPass" name="txtPass" class="txt_input" placeholder=" Enter Your Password"/> <br />
+              <p class="card-text">CONFIRM PASSWORD</p> 
+              <input  type="password" id="txtCPass" name="txtCPass" class="txt_input" placeholder=" Enter Your Confirm Password"/> <br />
+              <p class="card-text">Identification card</p> 
+              <input  type="text" id="txtID" name="txtID" class="txt_input" placeholder=" Enter Your Identification card"/>
+              <p class="card-text">Currently studying</p> 
+              <input  type="text" id="txtCS" name="txtCS" class="txt_input" placeholder=" Enter Your Currently studying"/>
+              <p class="card-text">Address</p> 
+              <input  type="text" id="txtA" name="txtA" class="txt_input" placeholder=" Enter Your Address"/>
+              <br />
+              <p class="card-text">PhoneNumber</p> 
+              <input  type="text" id="txtp" name="txtp" class="txt_input" placeholder=" Enter Your Phone number"/>
+              <br />
+              Gender: 
+              <input type="radio" name="rdGender" value="M" />Male
+              <input type="radio" name="rdGender" value="F" />Female
+              <input type="radio" name="rdGender" value="lgtbq" />LGBTQ+ <br /> <br />
+      
+              Academic year:<br />
+              <input type="radio" name="rdy" value="2563" />2563
+              <input type="radio" name="rdy" value="2564" />2564
+              <input type="radio" name="rdy" value="2565" />2565
+              <input type="radio" name="rdy" value="2566" />2566 <br /><br />
+
+              Birthday : <br /><br />
+    <select name="Year" id="Year" class="bi">
+        <option value="">--- Year ---</option>
+        <option value="2023">2023</option>
+        <option value="2022">2022</option>
+        <option value="2021">2021</option>
+        <option value="2020">2020</option>
+            <option value="2019">2019</option>
+            <option value="2018">2018</option>
+            <option value="2017">2017</option>
+            <option value="2016">2016</option>
+            <option value="2015">2015</option>
+            <option value="2014">2014</option>
+            <option value="2013">2013</option>
+            <option value="2012">2012</option>
+            <option value="2011">2011</option>
+            <option value="2010">2010</option>
+            <option value="2009">2009</option>
+            <option value="2008">2008</option>
+            <option value="2007">2007</option>
+            <option value="2006">2006</option>
+            <option value="2005">2005</option>
+            <option value="2004">2004</option>
+            <option value="2003">2003</option>
+            <option value="2002">2002</option>
+            <option value="2001">2001</option>
+            <option value="2000">2000</option>
+            <option value="1999">1999</option>
+            <option value="1998">1998</option>
+            <option value="1997">1997</option>
+            <option value="1996">1996</option>
+            <option value="1995">1995</option>
+            <option value="1994">1994</option>
+            <option value="1993">1993</option>
+            <option value="1992">1992</option>
+            <option value="1991">1991</option>
+            <option value="1990">1990</option>
+            <option value="1989">1989</option>
+            <option value="1988">1988</option>
+            <option value="1987">1987</option>
+            <option value="1986">1986</option>
+            <option value="1985">1985</option>
+            <option value="1984">1984</option>
+            <option value="1983">1983</option>
+            <option value="1982">1982</option>
+            <option value="1981">1981</option>
+            <option value="1980">1980</option>
+ 
+    </select>
+    
+    <select name="Month" id="Month" class="bi">
+        <option value="">--- Month ---</option>
+
+            <option value="Jan">January</option>
+            <option value="Feb">February</option>
+            <option value="Mar">March</option>
+            <option value="Apr">April</option>
+            <option value="May">May</option>
+            <option value="Jun">June</option>
+            <option value="Jul">July</option>
+            <option value="Aug">August</option>
+            <option value="Sep">September</option>
+            <option value="Oct">October</option>
+            <option value="Nov">November</option>
+            <option value="Dec">December</option>
+    </select>
+
+    <select name="Day" id="Day" class="bi">
+            <option value="">--- Day ---</option>
+            <option value="01">01</option>
+            <option value="02">02</option>
+            <option value="03">03</option>
+            <option value="04">04</option>
+            <option value="05">05</option>
+            <option value="06">06</option>
+            <option value="07">07</option>
+            <option value="08">08</option>
+            <option value="09">09</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+            <option value="24">24</option>
+            <option value="25">25</option>
+            <option value="26">26</option>
+            <option value="27">27</option>
+            <option value="28">28</option>
+            <option value="29">29</option>
+            <option value="30">30</option>
+            <option value="31">31</option>
+    </select>
+              <br /><br />
+              Aptitude:<br />
+              <input type="checkbox" name="chkAp[]" value="Music" />Music
+              <input type="checkbox" name="chkAp[]" value="Sport" />Sports <br />
+              <input type="checkbox" name="chkAp[]" value="calculate" />Calculate
+              <input type="checkbox" name="chkAp[]" value="language" />Language
+              <input type="checkbox" name="chkAp[]" value="draw" />Draw
+              <br /><br />
+
+
+              <input type="radio" name="rdArg" value="Argreement" /> Please accept our terms and conditions.
+              <button class="button" name="btnn" style="vertical-align:middle"><span>SUBMIT</span></button> 
+              </form> 
+          </div>
+        </div>
+      
+
+
+</body>
+</html>

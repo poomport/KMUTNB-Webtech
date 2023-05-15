@@ -1,0 +1,8 @@
+data='[ {"name": "Alice", "section": "TCT", "tel": "085-305-2824"}, \
+        {"name": "Bob", "section": "CED", "tel": "088-234-6432"}, \
+        {"name": "Alan", "section": "CED", "tel": "02-534-2636"}, \
+        {"name": "Jack", "section": "TCT", "tel": "089-341-7653"}, \
+        {"name": "Steve", "section": "TCT", "tel": "081-733-0865"},\
+        {"name": "Susan", "section": "CED", "tel": "088-865-4894"},\
+        {"name": "Thomas", "section": "TCT", "tel": "089-375-7944"},\
+        {"name": "Nathan", "section": "CED", "tel": "081-752-5894"}]';

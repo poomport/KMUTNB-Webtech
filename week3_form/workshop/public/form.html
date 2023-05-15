@@ -1,0 +1,65 @@
+<!--
+    Name: Ratchapoom Huabiam
+    ID: 6402041620256
+-->
+<!---
+    Tips :required must not use on javascript.
+         :use post don't use get.
+--->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h1>CED Form</h1>
+    <form name="frmCED" method="post" action="#"> 
+        <label>Username: </label> <br/>
+        <input type="text"  name="txtUser" id="txtUser"
+         size="16" maxlength="16"  required="required"
+         placeholder="Enter Username" /> <br/>
+
+        <label>Password: </label> <br/>
+        <input type="password" name="txtPass" id="txtPass"
+         size="16" maxlength="16" required="required" 
+         placeholder="Enter Password" />
+         <br/>
+         <label>Are you a Robot?: </label>
+         <input type="radio" name="rdRobot" value="yes" />
+         <span>Yes</span>
+         <input type="radio" name="rdRobot" value="no" />
+         <span>No</span>
+         <input type="radio" name="rdRobot" value="na" />
+         <span>N/A</span>
+         <hr />
+         <label>Your favorite food: </label>
+         <input type="checkbox" name="chkFood[]" value="burger" />
+         <span>Burger</span>
+         <input type="checkbox" name="chkFood[]" value="pizza" />
+         <span>Pizza</span>
+         <input type="checkbox" name="chkFood[]" value="frice" />
+         <span>Fried Rice</span>
+         <input type="checkbox" name="chkFood[]" value="spaghetti" />
+         <span>Spaghetti</span>
+         <hr />
+         <label>Marriage Status: </label> <br/>
+         <select name="SltMStatus[]" size="2" multiple="multiple">
+            <option value="">===Please Select===</option>
+            <option value="s">Single</option>
+            <option value="m">Married</option>
+            <option value="d">Divorced</option>
+         </select>
+         <hr />
+         <label>Comment: </label> <br/>
+         <textarea name="taComment" cols="30" rows="4"
+          placeholder="Please enter your comment here."></textarea>
+
+         <hr />
+        <input type="reset" value="Cancel"/>
+        <input type="submit" name="btnSubmit" value="Send" />
+        <hr />
+        <a href="index.html"> Go back!!</a>
+    </form>
+</body>
+</html>

@@ -1,0 +1,19 @@
+body{
+  background-color: rosybrown;
+  color:gold;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h1{
+   text-align:center;
+   background-color: darkred;
+}
+h2{
+   text-align:center;
+   background-color: darkgreen;
+}
+p{
+    background-color: darkcyan;
+}
+div{
+    color: royalblue;
+}
